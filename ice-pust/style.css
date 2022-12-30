@@ -249,6 +249,9 @@ footer {
 .teacher-details > h4 {
   margin-top: 5px;
 }
+.routine{
+  padding:3rem;
+}
 @media only screen and (min-width: 600px) {
   main {
     background-color: white;
