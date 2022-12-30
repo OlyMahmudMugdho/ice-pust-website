@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightgrey;
+}
+.content {
+  background-color: white;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 9pt;
+}
+
+main {
+  height: 100vh;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+}
+
+.pust_logo {
+  width: 3.6em;
+  margin: 1em;
+  margin-right: 1em;
+  margin-top: 0.2em;
+  margin-left: 1em;
+}
+header {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  background-color: #850000d7;
+  color: white;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+header h2 {
+  color: skyblue;
+  /*color:yellowgreen*/
+}
+/* navbar starts */
+nav {
+  overflow: visible;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  background-color: #6a0000;
+  flex-wrap: wrap;
+  overflow: visible;
+}
+nav ul li {
+  text-align: center;
+  position: relative;
+}
+li a {
+  padding: 1rem 3rem;
+  width: 100%;
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3em;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+
+.not-hidden {
+  display: none;
+}
+.dropdown-content:hover{
+  background-color: rgb(77, 92, 230);
+}
+.dropdown-menu {
+  width: 100%;
+  background-color: #b41a1a;
+  position: absolute;
+  display: none;
+  padding: 0;
+}
+/* .dropdown-content{
+  display: none;
+} */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+
+/* navbar ends*/
+.program {
+  background-color: rgb(8, 170, 235);
+  color: white;
+  margin: 1em;
+  padding: 1em;
+  text-align: center;
+  border-radius: 0.3em;
+}
+.semister {
+  background-color: white;
+}
+.semister h3 {
+  margin-top: 1em;
+  text-align: center;
+  font-size: 1.5em;
+}
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 90%;
+  text-align: center;
+  box-sizing: content-box;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #eaecec;
+}
+tr:hover :not(th, td.not-hover, h3) {
+  background-color: #afacac;
+}
+
+tr:hover td {
+  color: black;
+}
+th {
+  border: 1px solid black;
+  background-color: #850000d7;
+  color: white;
+  padding: 0.5rem 0.5rem;
+}
+td {
+  border: 1px solid black;
+  color: black;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  word-spacing: 0.5em;
+  text-align: left;
+}
+tbody tr td:nth-child(4),
+tbody tr td:nth-child(2) {
+  text-align: center;
+}
+.spacer td {
+  border: none;
+  background-color: white;
+}
+footer {
+  background-color: #850000d7;
+  color: white;
+  padding: 0.5em 1em;
+  text-align: center;
+}
+.owner {
+  font-family: monospace;
+}
+.owner a {
+  color: aqua;
+  text-decoration: none;
+}
+.hi {
+  font-size: 100px;
+}
+@media only screen and (min-width: 600px) {
+  main {
+    background-color: white;
+    height: 100vh;
+    margin: 0rem 5rem;
+  }
+  .pust_logo {
+    width: 3.3em;
+    float: left;
+    margin-right: 1em;
+    margin-top: 0.2em;
+  }
+  .header-text {
+    margin-left: 5em;
+  }
+  header {
+    text-align: left;
+    clear: left;
+  }
+  .content {
+    font-size: 11pt;
+  }
+  th {
+    padding: 0.5rem 1rem;
+  }
+  td {
+    padding: 0.5rem 1rem;
+  }
+}
+/* navbar media queries starts */
+@media only screen and (max-width: 1200px) {
+  header{
+    font-size: 0.82rem;
+  }
+  ul {
+    flex-direction: column;
+    align-items: center;
+/*     align-items: flex-end; */
+    font-size: 0.1rem;
+  }
+  .not-hidden {
+    background-color: #6a0000;
+    display: initial;
+    text-align: center;
+  }
+   .not-hidden i{
+    float: right;
+  }
+  .links:not(.not-hidden) {
+    padding: 0;
+    margin: 0;
+    display: none;
+  }
+  li a {
+    font-size: 1rem;
+  }
+  nav {
+    background-color: #6a0000;
+  }
+  .dropdown-menu {
+    position: initial;
+  }
+}
+/* navbar media queries ends */

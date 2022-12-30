@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightgrey;
+}
+.content {
+  background-color: white;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 9pt;
+}
+
+main {
+  height: 100vh;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+}
+
+.pust_logo {
+  width: 3.6em;
+  margin: 1em;
+  margin-right: 1em;
+  margin-top: 0.2em;
+  margin-left: 1em;
+}
+header {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  background-color: #850000d7;
+  color: white;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+header h2 {
+  color: skyblue;
+  /*color:yellowgreen*/
+}
+/* navbar starts */
+nav {
+  overflow: visible;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  background-color: #6a0000;
+  flex-wrap: wrap;
+  overflow: visible;
+}
+nav ul li {
+  text-align: center;
+  position: relative;
+}
+li a {
+  padding: 1rem 4rem;
+  width: 100%;
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+
+.not-hidden {
+  display: none;
+}
+.dropdown-content:hover{
+  background-color: rgb(77, 92, 230);
+}
+.dropdown-menu {
+  width: 100%;
+  background-color: #b41a1a;
+  position: absolute;
+  display: none;
+  padding: 0;
+}
+/* .dropdown-content{
+  display: none;
+} */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+
+/* navbar ends*/
+
+.welcome{
+  padding: 1rem 2rem;
+  display: flex;
+  flex-wrap: row wrap;
+  justify-content: space-between;
+}
+.welcome p{
+  text-align: justify;
+}
+.welcome .photo{
+  padding: 0em 2em;
+  word-spacing: 0.2em;
+  line-height: 1.5rem;
+}
+.ice-logo{
+  padding: 0em 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.ice-logo img{
+  width: 15rem;
+  height: 15rem;
+  margin-top: 2rem;
+}
+.ice-logo .ice-image{
+  width: 20rem;
+}
+.chairman-details{
+  padding-top: 1em;
+}
+.welcome .message{
+  padding: 0em 2em;
+  line-height: 2rem;
+  word-spacing: 0.4em;
+}
+.welcome .message  ol{
+  padding-left: inherit;
+}
+.program {
+  background-color: rgb(8, 170, 235);
+  color: white;
+  margin: 1em;
+  padding: 1em;
+  text-align: center;
+  border-radius: 0.3em;
+}
+
+.semister {
+  background-color: white;
+}
+.semister h3 {
+  margin-top: 1em;
+  text-align: center;
+  font-size: 1.5em;
+}
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 90%;
+  text-align: center;
+  box-sizing: content-box;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #eaecec;
+}
+tr:hover :not(th, td.not-hover, h3) {
+  background-color: #afacac;
+}
+
+tr:hover td {
+  color: black;
+}
+th {
+  border: 1px solid black;
+  background-color: #850000d7;
+  color: white;
+  padding: 0.5rem 0.5rem;
+}
+td {
+  border: 1px solid black;
+  color: black;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  word-spacing: 0.5em;
+  text-align: left;
+}
+tbody tr td:nth-child(4),
+tbody tr td:nth-child(2) {
+  text-align: center;
+}
+.spacer td {
+  border: none;
+  background-color: white;
+}
+footer {
+  background-color: #850000d7;
+  color: white;
+  padding: 0.5em 1em;
+  text-align: center;
+}
+.owner {
+  font-family: monospace;
+}
+.owner a {
+  color: aqua;
+  text-decoration: none;
+}
+.hi {
+  font-size: 100px;
+}
+.all-teachers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+.teacher {
+  width: 47%;
+  height: 8rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1rem;
+  margin-top: 1rem;
+  background-color: #dfdddd;
+}
+.teacher-img-section {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.teacher-img {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+}
+
+.teacher-details {
+  width: 65%;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  line-height: 1.5;
+}
+.teacher-details > h4 {
+  margin-top: 5px;
+}
+@media only screen and (min-width: 600px) {
+  main {
+    background-color: white;
+    height: 100vh;
+    margin: 0rem 5rem;
+  }
+  .pust_logo {
+    width: 3.3em;
+    float: left;
+    margin-right: 1em;
+    margin-top: 0.2em;
+  }
+  .header-text {
+    margin-left: 5em;
+  }
+  header {
+    text-align: left;
+    clear: left;
+  }
+  .content {
+    font-size: 11pt;
+  }
+  th {
+    padding: 0.5rem 1rem;
+  }
+  td {
+    padding: 0.5rem 1rem;
+  }
+}
+/* navbar media queries starts */
+@media only screen and (max-width: 1200px) {
+  header{
+    font-size: 0.5rem;
+  }
+  .welcome{
+    flex-wrap: wrap;
+    padding: 1em 1em;
+    font-size: 0.9rem;
+  }
+.photo img{
+  width: 15rem;
+}
+  .welcome .message{
+    padding: 1em;
+  }
+  ul {
+    flex-direction: column;
+    align-items: center;
+/*     align-items: flex-end; */
+    font-size: 0.1rem;
+  }
+  .not-hidden {
+    background-color: #6a0000;
+    display: initial;
+    text-align: center;
+  }
+   .not-hidden i{
+    float: right;
+  }
+  .links:not(.not-hidden) {
+    padding: 0;
+    margin: 0;
+    display: none;
+  }
+  li a {
+    font-size: 1rem;
+  }
+  nav {
+    background-color: #6a0000;
+  }
+  .dropdown-menu {
+    position: initial;
+  }
+  .all-teachers {
+    justify-content: center;
+  }
+  .teacher {
+    width: 100%;
+    max-width: 80vw;
+  }
+  .teacher-img {
+    height: 5rem;
+    width: 5rem;
+  }
+}
+/* navbar media queries ends */
+@media only screen and (min-width: 1200px){
+  .links:hover{
+    background-color: #3f3636;
+  }
+}
