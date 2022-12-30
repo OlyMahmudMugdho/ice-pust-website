@@ -196,8 +196,8 @@ footer {
 }
 /* navbar media queries starts */
 @media only screen and (max-width: 1200px) {
-  header{
-    font-size: 0.82rem;
+   header{
+    font-size: 0.5rem;
   }
   ul {
     flex-direction: column;
