@@ -9,6 +9,7 @@ body {
   background-color: lightgrey;
 }
 .content {
+  min-height:90vh;
   background-color: white;
   font-family: "Ubuntu", sans-serif;
   font-size: 9pt;
